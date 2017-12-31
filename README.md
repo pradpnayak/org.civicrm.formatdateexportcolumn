@@ -1,45 +1,31 @@
-# org.civicrm.formatdateexportcolumn
+# Format Date Column in Export
 
-![Screenshot](/images/screenshot.png)
+#### org.civicrm.formatdateexportcolumn
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+# Overview
 
-The extension is licensed under [AGPL-3.0](LICENSE.txt).
+This extension allows to change format of date field in export.
 
-## Requirements
+## Installation
 
-* PHP v5.4+
-* CiviCRM (*FIXME: Version number*)
+1. If you have not already done so, setup Extensions Directory
+    1. Go to Administer >> System Settings >> Directories
+        1. Set an appropriate value for CiviCRM Extensions Directory. For example, for Drupal, [civicrm.files]/ext/
+        1. In a different window, ensure the directory exists and is readable by your web server process.
+    1. Click Save.
+1. If you have not already done so, setup Extensions Resources URL
+    1. Go to Administer >> System Settings >> Resource URLs
+        1. Beside Extension Resource URL, enter an appropriate values such as [civicrm.files]/ext/
+    1. Click Save.
+1. Install Format Date Column in Export extension
+    1. Go to Administer >> Customize Data and Screens >> Manage Extensions.
+    1. Click on Add New tab.
+    1. If Format Date Column in Export is not in the list of extensions, manually download it and unzip it into the extensions direction setup above, then return to this page.
+    1. Beside Format Date Column in Export, click Download.
+    1. Review the information, then click Download and Install.
+1. Setup Export Date Field Format.
+    1. Go to Administer >> Localization >> Date Formats.
+    1. Update the fields under section Export Date Fields Format.
 
-## Installation (Web UI)
 
-This extension has not yet been published for installation via the web UI.
-
-## Installation (CLI, Zip)
-
-Sysadmins and developers may download the `.zip` file for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-cd <extension-dir>
-cv dl org.civicrm.formatdateexportcolumn@https://github.com/FIXME/org.civicrm.formatdateexportcolumn/archive/master.zip
-```
-
-## Installation (CLI, Git)
-
-Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) repo for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-git clone https://github.com/FIXME/org.civicrm.formatdateexportcolumn.git
-cv en formatdateexportcolumn
-```
-
-## Usage
-
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
-# org.civicrm.formatdateexportcolumn
+This extension has been developed and is being maintained by [Pradeep Nayak](https://github.com/pradpnayak/).
