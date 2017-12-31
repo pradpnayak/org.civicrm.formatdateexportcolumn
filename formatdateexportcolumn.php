@@ -178,12 +178,12 @@ function formatdateexportcolumn_civicrm_export($exportTempTable, $headerRows, $s
     }
   }
   if (!empty($updateDateFields)) {
-    $sql .= 'SET ' . implode (', ', $updateDateFields);
+    $sql .= 'SET ' . implode(', ', $updateDateFields);
     $totalExportBatchCount = CRM_Core_DAO::singleValueQuery("SELECT count(id) FROM {$exportTempTable}");
     $batchSize = 5000;
     for ($startId = 1; $startId <= $totalExportBatchCount; $startId += $batchSize) {
       $endId = $startId + $batchSize - 1;
-      $query =  $sql . " WHERE id BETWEEN {$startId} AND {$endId}";
+      $query = $sql . " WHERE id BETWEEN {$startId} AND {$endId}";
       CRM_Core_DAO::executeQuery($query);
     }
   }
